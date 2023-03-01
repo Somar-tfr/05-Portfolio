@@ -1,0 +1,33 @@
+*{
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    height: 6rem;
+}
+
+header h1{
+    color: white;
+    margin-left: 2rem;
+    align-self: center;
+    font-size: 40px;
+}
+
+.nav-menu{
+    margin-right:  2rem ;
+    align-self: center;
+}
+
+.nav-menu li{
+    display: inline;
+    margin-right:  2rem;
+    font-size: 20px;
+
+}
+
