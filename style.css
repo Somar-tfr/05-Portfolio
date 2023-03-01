@@ -1,15 +1,15 @@
-*{
-
-}
+/*{
+}*/
 
 header{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color: black;
     width: 100%;
     position:fixed;
     z-index: 1;
-    height: 6rem;
+    height: 7rem;
 }
 
 header h1{
@@ -31,3 +31,19 @@ header h1{
 
 }
 
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    
+}
+/*
+.grid-container{
+    display: grid;
+    width: 100px;
+    grid-template-columns: 6fr;
+    grid-gap: 10px 10px;
+}*/
+
+main{
+    display:block;
+}   
