@@ -1,5 +1,7 @@
-/*{
-}*/
+body{
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
 
 header{
     display: flex;
@@ -7,26 +9,26 @@ header{
     align-content: center;
     background-color: black;
     width: 100%;
-    position:fixed;
+    position:relative;
     z-index: 1;
     height: 7rem;
 }
 
 header h1{
     color: white;
-    margin-left: 2rem;
     align-self: center;
-    font-size: 40px;
+    font-size: 3rem;
+    padding-left: 2rem;
+    font-family: 'Gloock', serif;
 }
-
 .nav-menu{
-    margin-right:  2rem ;
     align-self: center;
+    padding-right: 2rem;
 }
 
 .nav-menu li{
     display: inline;
-    margin-right:  2rem;
+    margin-left:  2rem;
     font-size: 20px;
 
 }
@@ -45,5 +47,11 @@ header h1{
 }*/
 
 main{
-    display:block;
+    /*display:block;*/
+    /*padding-top: 7rem;*/
+    margin: 0 2rem;
+    position: relative;
 }   
+
+footer{
+}
