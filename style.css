@@ -97,7 +97,13 @@ footer{
     align-content: space-between;
     justify-content: space-around;
     display: flex;
+    margin: 0 -2rem;
 
+}
+
+.banner img{
+    border-radius: 2rem;
+    border: 1rem solid #EDB403;
 }
 #titel {
     font-family: 'Playfair Display', serif;
@@ -109,7 +115,23 @@ footer{
     width: 40%;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;    
+    align-content: space-between;    
+}
+
+#werbinich p{
+    display: flex;
+}
+
+#werbinich h2{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+h2{
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color:#4973B1
 }
 
 .banner p{
