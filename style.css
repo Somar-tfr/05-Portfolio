@@ -1,9 +1,10 @@
 body{
     margin: 0 auto;
     /*font-family: 'Raleway', sans-serif;*/
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #fbf3ea;
     color: #40383b;
+    font-size: 1.5rem;
 }
 
 header{
@@ -17,12 +18,14 @@ header{
     height: 7rem;
 }
 
-header h1{
+.logo{
     color: #F25224;
     align-self: center;
-    font-size: 5rem;
     padding-left: 2rem;
     font-family: 'Gloock', serif;
+}
+header h1{
+    font-size: 5rem;
 }
 nav{
     align-self: center;
@@ -33,14 +36,14 @@ nav li{
     display: inline;
     padding-left:  1rem;
     font-size: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
 }
 
 nav a{
     color: #40383b;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /*
 .grid-container{
@@ -94,32 +97,42 @@ footer{
 
 .banner{
     background-color: #f8e9d8;
-    align-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     margin: 0 -2rem;
+    height: 36rem;
+    align-items: center;
 
 }
 
 .banner img{
     border-radius: 2rem;
     border: 1rem solid #EDB403;
+    margin-right: 2rem
 }
 #titel {
     font-family: 'Playfair Display', serif;
     font-size: 8rem;
     width: 40%;
+    margin: 1rem 0rem;
+    
 }
 
-#werbinich{
-    width: 40%;
+
+
+.abschnitt {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;    
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 40rem;
 }
 
 #werbinich p{
     display: flex;
+    width: 40%;
+    text-align: justify;
 }
 
 #werbinich h2{
@@ -142,6 +155,14 @@ h2{
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
+}
+
+.auflistung{
+    width: 40%;
+}
+
+.whenwhatlist li{
+    text-align: justify;
 }
 
 /*
