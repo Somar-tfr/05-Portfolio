@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    min-width: 1280px;
     /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
     background-color: #fbf3ea;
@@ -9,7 +10,7 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     background-color: #fbf3ea;
     width: 100%;
@@ -68,13 +69,13 @@ footer{
 }
 #linke{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 }
 
 #footnotes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 
 }
@@ -97,7 +98,7 @@ footer{
 
 .banner{
     background-color: #f8e9d8;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     margin: 0 -2rem;
     height: 36rem;
@@ -123,10 +124,10 @@ footer{
 .abschnitt {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    align-items: center;
-    height: 40rem;
+    align-items: flex-start;
+    min-height: 40rem;
 }
 
 #werbinich p{
@@ -158,13 +159,25 @@ h2{
 }
 
 .auflistung{
-    width: 40%;
+    width: 100%;
+}
+
+.whenwhatlist{
+    padding: 0;
 }
 
 .whenwhatlist li{
     text-align: justify;
-}
+    list-style-type: none;
 
+}
+#lebenslaufinhalt{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-end;
+}
 #zertifikate{
     display:block;
     height:auto;
@@ -175,7 +188,7 @@ h2{
 
 #zertifikatscheine{
     align-content: flex-start;
-    
+    justify-content: space-around;
 }
 
 #zertifikate img{
