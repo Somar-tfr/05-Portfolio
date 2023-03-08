@@ -22,7 +22,7 @@ header{
 .logo{
     color: #F25224;
     align-self: center;
-    padding-left: 2rem;
+    /*padding-left: 2rem;*/
     font-family: 'Gloock', serif;
 }
 header h1{
@@ -75,13 +75,15 @@ footer{
 
 #footnotes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 
 }
 
 #footnotes p{
-    padding-left: 2rem;
+    
+    font-size: 1rem;
 }
 
 #footer h3{
@@ -90,7 +92,8 @@ footer{
 
 #footer{
     color: #40383b;
-        justify-content: space-around;
+    display: block;
+    justify-content: space-around;
 }
 #footnotes nav li a{
     font-size: 1rem;
@@ -166,18 +169,23 @@ h2{
     padding: 0;
 }
 
-.whenwhatlist li{
-    text-align: justify;
-    list-style-type: none;
 
-}
 #lebenslaufinhalt{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-content: space-between;
     align-items: flex-end;
+    width: 40%;
+    
 }
+
+.whenwhatlist li {
+    text-align: justify;
+    list-style-type: none;
+
+}
+
 #zertifikate{
     display:block;
     height:auto;
@@ -208,3 +216,17 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Quicksand', sans-serif;
 */
+
+#lebenslauf{
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#lebenslauf h2{
+    margin-right: 2rem;
+    
+}
+
+#kontakt p{
+    width:90%;
+}
