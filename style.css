@@ -6,6 +6,7 @@ body{
     background-color: #fbf3ea;
     color: #40383b;
     font-size: 1.5rem;
+    align-content: center;
 }
 
 header{
@@ -187,7 +188,7 @@ h2{
 }
 
 #zertifikate{
-    display:block;
+    /*display:block;*/
     height:auto;
     padding:0;
 
@@ -226,7 +227,35 @@ font-family: 'Quicksand', sans-serif;
     margin-right: 2rem;
     
 }
-
+#kontakt{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #kontakt p{
-    width:90%;
+    text-align: justify;
+
+}
+.center h2{
+    width: 100%;
+    text-align: center;
+}
+
+.projektbild img{
+    width: 600px;
+    height: auto;
+}
+
+.projekthintergrund{
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1rem solid #EDB403;
+    background-color: #f8e9d8;
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+}
+.projektinhalt{
+    align-items: center;
+    text-align: center;
 }
