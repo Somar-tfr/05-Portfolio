@@ -20,11 +20,13 @@ function mouseUp(event){
 function mouseOver(event){
     event.target.style.color = "black";
     event.target.style.backgroundColor = "#EDB403"
+    event.target.style.fontSize = "1.5rem";
 }
 
 function mouseOut(event){
     event.target.style.color = "";
     event.target.style.backgroundColor = "";
+    event.target.style.fontSize = "";
 }
 
 //eventhandler
