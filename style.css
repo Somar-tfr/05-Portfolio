@@ -7,7 +7,7 @@ body{
     min-width: 1280px;
     /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
-    
+    /*width: 1280px;*/
     font-size: 1.5rem;
     align-content: center;
 
@@ -141,8 +141,6 @@ main{
 
 footer{
     background-color: var(--bannerColor);
-    margin: 0;
-    width: 100%;
     height: 14rem;
 }
 #linke{
@@ -184,6 +182,7 @@ footer{
     margin: 0 -2rem;
     height: 36rem;
     align-items: center;
+    box-sizing: border-box;
 
 }
 
@@ -205,7 +204,7 @@ footer{
 .abschnitt {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     align-items: flex-start;
     min-height: 40rem;
@@ -220,6 +219,7 @@ footer{
 #werbinich h2{
     flex-wrap: wrap;
     display: flex;
+    padding-right:  12rem;
 }
 
 h2{
