@@ -120,8 +120,8 @@ nav a{
 
 .controls {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 2rem;
+    justify-content: center;
+    margin-left: 66rem;
 
 }
 /*
@@ -177,29 +177,39 @@ footer{
 
 .banner{
     background-color: var(--bannerColor);
-    justify-content: space-around;
     display: flex;
+    justify-content: center;
     margin: 0 -2rem;
     height: 36rem;
-    align-items: center;
-    box-sizing: border-box;
+    
 
+}
+
+#bannerinhalt{
+    
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    width: 1280px;
 }
 
 .banner img{
     border-radius: 2rem;
     border: 1rem solid var(--frameColor);
-    margin-right: 2rem
 }
 #titel {
     font-family: 'Playfair Display', serif;
     font-size: 8rem;
-    width: 40%;
-    margin: 1rem 0rem;
+    padding-right: 2rem;
+    margin: 1rem 0;
     
 }
 
-
+section{
+    display: flex;
+    justify-content: center;
+}
 
 .abschnitt {
     display: flex;
@@ -208,6 +218,7 @@ footer{
     align-content: center;
     align-items: flex-start;
     min-height: 40rem;
+    width: 1280px;
 }
 
 #werbinich p{
@@ -301,7 +312,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 #lebenslauf h2{
-    margin-right: 2rem;
+    padding-right: 12rem;
     
 }
 #kontakt{
@@ -318,8 +329,11 @@ font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
 
+.projektbild{
+    display: flex;
+}
 .projektbild img{
-    width: 600px;
+    width: 400px;
     height: auto;
 }
 
@@ -335,4 +349,6 @@ font-family: 'Quicksand', sans-serif;
 .projektinhalt{
     align-items: center;
     text-align: center;
+    width: 400px;
+    height: 150px;
 }
