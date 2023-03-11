@@ -8,7 +8,7 @@ listitems.forEach(function(item){
 
 //changes
 function mouseClick(event){
-    event.target.style.backgroundColor = "#F25224";
+    event.target.style.backgroundColor = "var(--logoColor)";
     event.target.style.color = "white";
 }
 
@@ -19,7 +19,7 @@ function mouseUp(event){
 
 function mouseOver(event){
     event.target.style.color = "black";
-    event.target.style.backgroundColor = "#EDB403"
+    event.target.style.backgroundColor = "var(--frameColor)"
     event.target.style.fontSize = "1.5rem";
 }
 
@@ -41,3 +41,35 @@ function handlerMouseList(obj){
 //a loop for all listitems
 
 listitemsObjects.forEach(handlerMouseList);
+
+
+//coding darkmode
+
+class CssPropControl{
+    constructor(element){
+        this.element = element;
+    }
+
+    get(varName){
+        return getComputedStyle(this.element).getPropertyValue(varName);
+    }
+    set(varName, val){
+        return this.element.style.setProperty(varName, val);
+    }
+}
+
+const bodyCssProps = new CssPropControl(document.body)
+
+let toggle = document.querySelector('#darkmodetoggle')
+toggle.addEventListener("click", () =>{
+    let mode = toggle.checked ? 'dark': 'light';
+
+    bodyCssProps.set('--backgroundColor', bodyCssProps.get(`--${mode}BackgroundColor`));
+    bodyCssProps.set('--primaryColor', bodyCssProps.get(`--${mode}PrimaryColor`));
+    bodyCssProps.set('--bannerColor', bodyCssProps.get(`--${mode}BannerColor`));
+    bodyCssProps.set('--titlesColor', bodyCssProps.get(`--${mode}TitlesColor`));
+    bodyCssProps.set('--logoColor', bodyCssProps.get(`--${mode}LogoColor`));
+    bodyCssProps.set('--frameColor', bodyCssProps.get(`--${mode}FrameColor`));
+
+    
+});
