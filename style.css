@@ -289,7 +289,7 @@ h2{
 }
 
 #zertifikate img{
-    width: 30%;
+    width: 390px;
     height:auto;
     margin:0.5rem;
     border-radius: 3rem;
@@ -351,4 +351,114 @@ font-family: 'Quicksand', sans-serif;
     text-align: center;
     width: 400px;
     height: 150px;
+}
+
+@media only screen and (max-width: 480px){
+    body{
+        min-width: auto;
+        font-size: 1rem;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .navmenu{
+        display: none;
+    }
+
+    .breadcrumb li{
+        display: none;
+    }
+
+    .logoandlist{
+        flex-direction: column;
+    }
+
+    .controls{
+        display: none;
+    }
+
+    .logo{
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    #bannerinhalt{
+        width: auto;
+        flex-direction: column;
+    }
+    
+    #titel {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #personalphoto  {
+    justify-content: center;
+    }
+
+    #personalphoto img{
+        width: 70%;
+
+    }
+
+    .abschnitt{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #werbinich h2{
+        padding-right: 0;
+        width: auto;
+    }
+
+    h2{
+        padding: none;
+        font-size: 2rem;
+        text-align: center;
+        align-self: center;
+        
+    }
+    #werbinich p{
+        width: auto;
+    }
+
+    .projektbild img{
+        width: 200px;
+    }
+    .projektbild{
+        justify-content: center;
+    }
+    .projektinhalt{
+        width: 200px;
+    }
+    .projekthintergrund{
+        display: flex;
+    }
+    #lebenslauf h2{
+        padding-right: 0;
+    }
+    #lebenslaufinhalt{
+        width: auto;
+    }
+    #zertifikate img{
+        width: 300px;
+    }
+
+    nav li{
+        font-size: 1rem;
+    }
+    #linke{
+        flex-direction: column;
+    }
+    #footer h3{
+        padding-left: 0;
+    }
+    footer{
+        height: auto;
+    }
 }
